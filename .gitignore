@@ -1,0 +1,6 @@
+# Workflow-JSONs enthalten API Keys - nicht pushen
+workflow-*.json
+synthese-*.js
+
+# macOS
+.DS_Store
