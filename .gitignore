@@ -2,5 +2,8 @@
 workflow-*.json
 synthese-*.js
 
+# Generated docs
+generate-doc.js
+
 # macOS
 .DS_Store
