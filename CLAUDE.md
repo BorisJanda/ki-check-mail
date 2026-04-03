@@ -3,9 +3,17 @@
 ## Status: Pausiert
 
 Projekt wird aktuell nicht aktiv weiterverfolgt. Der n8n-Workflow ist deaktiviert.
-Grund: Die Claude API unterstützt kein Web-Browsing — damit fehlt ein zentraler Wissenszugang.
-Claude ist als Strategie-Berater und Risiko-Analyst eingeplant, kann aber ohne Web-Recherche nicht auf dem Niveau der anderen KIs (Perplexity, Gemini, ChatGPT) arbeiten.
-Sobald die Claude API Web-Browsing unterstützt, wird das Projekt wieder aufgenommen.
+Grund: Das Claude API Web Search Tool (seit Mai 2025 GA, $10/1000 Suchen) muss noch in den n8n-Workflow integriert werden.
+Konzept liegt in `konzepte/claude-api-web-browsing-loesung.md`.
+Nächster Schritt: AI-116 (Integration) → AI-118 (Test + Go-Live).
+
+**Update 2026-03-31:** Recherche ergab, dass das Claude API Web Search Tool seit Mai 2025 (GA) existiert. Integration in n8n steht aus.
+
+## Jira
+
+- **Hauptticket:** [AI-110](https://jandaroscher.atlassian.net/browse/AI-110) — ki-check-mail
+- **AI-116:** Claude Web Search Tool in n8n-Workflow integrieren
+- **AI-118:** End-to-End testen und Workflow aktivieren
 
 ## Projektkontext
 
@@ -76,10 +84,9 @@ Das Endprodukt (Email + Word) zeigt "4-KI-Expertise" mit 4 Einzelantworten.
 
 ## Bekannte Einschränkungen
 
-- Claude API hat kein Web-Browsing — das ist der Hauptgrund für die Projektpause
-- Claude bekommt nur über den CLI-Weg einen Web-Recherche-Kontext mitgegeben
-- Nur Perplexity, Gemini und ChatGPT recherchieren eigenständig im Web
-- Upgrade-Pfad: Wenn Claude API Web-Browsing bekommt → in Core Sub-Workflow einbauen, Projektpause beenden
+- Claude API Web Search Tool existiert (seit Mai 2025 GA), ist aber noch nicht in den n8n-Workflow integriert
+- Aktuell bekommt Claude nur über den CLI-Weg einen Web-Recherche-Kontext mitgegeben
+- Upgrade-Pfad: Web Search Tool in ki-check-core einbauen (AI-116), dann E2E-Test (AI-118)
 
 ## Design-Prinzipien
 
