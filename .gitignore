@@ -7,4 +7,5 @@ generate-doc.js
 
 # macOS
 .DS_Store
-~.docx
+~$*.docx
+~*.docx
